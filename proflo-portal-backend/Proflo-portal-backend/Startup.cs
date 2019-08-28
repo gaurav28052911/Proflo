@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Swashbuckle.AspNetCore.SwaggerUI;
+using Microsoft.AspNetCore.StaticFiles;
 
 namespace Proflo_portal_backend
 {
@@ -43,6 +45,12 @@ namespace Proflo_portal_backend
 
             app.UseHttpsRedirection();
             app.UseMvc();
+            app.UseStaticFiles();
+            app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger.json", "Proflo-portal-backend");
+                });
+                }
         }
     }
-}
+

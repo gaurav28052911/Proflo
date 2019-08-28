@@ -2,7 +2,7 @@ image: mcr.microsoft.com/dotnet/core/sdk:2.2-alpine3.9
 stages:
  - build
 build-stage:
- stage:build
+ stage: build
  script:
    - dotnet restore
    - dotnet build
@@ -15,6 +15,6 @@ build-stage:
 test-stage:
  stage: test
  script:
-   - dotnet test OnboardingBackendTest/OnboardingBackendTest.csproj
+   - dotnet test Core_BackendTest/Core_BackendTest.csproj
  tags:
    - immersive-cgi-w7-dotnet

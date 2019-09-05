@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace Proflo_portal_backend
+namespace ProfloPortalBackend
 {
     public class Program
     {

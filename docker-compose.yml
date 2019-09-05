@@ -1,7 +1,0 @@
-version: '3.5'
-services:
- webapi:
-   image: core
-   build: .
-   ports:
-     - "5000:80"

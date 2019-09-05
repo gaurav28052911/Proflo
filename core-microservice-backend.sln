@@ -3,14 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proflo-portal-backend", "proflo-portal-backend\Proflo-portal-backend\Proflo-portal-backend.csproj", "{D5BD4AB2-E00C-471D-BAE8-850AE3A549D8}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{42C2CFA1-1C9C-4B8F-8952-EEE821CA1F1C}"
 	ProjectSection(SolutionItems) = preProject
 		.gitlab-ci.yml = .gitlab-ci.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core_BackendTest", "Core_BackendTest\Core_BackendTest.csproj", "{0DB8D3CA-1AD3-4479-A7D9-756C686E6AAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core_BackendTest", "Core_BackendTest\Core_BackendTest.csproj", "{0DB8D3CA-1AD3-4479-A7D9-756C686E6AAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proflo-portal-backend", "Proflo-portal-backend\Proflo-portal-backend.csproj", "{902431D1-A9C7-4E24-9E9E-89282FD25122}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,18 +22,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D5BD4AB2-E00C-471D-BAE8-850AE3A549D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5BD4AB2-E00C-471D-BAE8-850AE3A549D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5BD4AB2-E00C-471D-BAE8-850AE3A549D8}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{D5BD4AB2-E00C-471D-BAE8-850AE3A549D8}.Debug|x64.Build.0 = Debug|Any CPU
-		{D5BD4AB2-E00C-471D-BAE8-850AE3A549D8}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{D5BD4AB2-E00C-471D-BAE8-850AE3A549D8}.Debug|x86.Build.0 = Debug|Any CPU
-		{D5BD4AB2-E00C-471D-BAE8-850AE3A549D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5BD4AB2-E00C-471D-BAE8-850AE3A549D8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D5BD4AB2-E00C-471D-BAE8-850AE3A549D8}.Release|x64.ActiveCfg = Release|Any CPU
-		{D5BD4AB2-E00C-471D-BAE8-850AE3A549D8}.Release|x64.Build.0 = Release|Any CPU
-		{D5BD4AB2-E00C-471D-BAE8-850AE3A549D8}.Release|x86.ActiveCfg = Release|Any CPU
-		{D5BD4AB2-E00C-471D-BAE8-850AE3A549D8}.Release|x86.Build.0 = Release|Any CPU
 		{0DB8D3CA-1AD3-4479-A7D9-756C686E6AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0DB8D3CA-1AD3-4479-A7D9-756C686E6AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DB8D3CA-1AD3-4479-A7D9-756C686E6AAA}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -46,6 +34,18 @@ Global
 		{0DB8D3CA-1AD3-4479-A7D9-756C686E6AAA}.Release|x64.Build.0 = Release|Any CPU
 		{0DB8D3CA-1AD3-4479-A7D9-756C686E6AAA}.Release|x86.ActiveCfg = Release|Any CPU
 		{0DB8D3CA-1AD3-4479-A7D9-756C686E6AAA}.Release|x86.Build.0 = Release|Any CPU
+		{902431D1-A9C7-4E24-9E9E-89282FD25122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{902431D1-A9C7-4E24-9E9E-89282FD25122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{902431D1-A9C7-4E24-9E9E-89282FD25122}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{902431D1-A9C7-4E24-9E9E-89282FD25122}.Debug|x64.Build.0 = Debug|Any CPU
+		{902431D1-A9C7-4E24-9E9E-89282FD25122}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{902431D1-A9C7-4E24-9E9E-89282FD25122}.Debug|x86.Build.0 = Debug|Any CPU
+		{902431D1-A9C7-4E24-9E9E-89282FD25122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{902431D1-A9C7-4E24-9E9E-89282FD25122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{902431D1-A9C7-4E24-9E9E-89282FD25122}.Release|x64.ActiveCfg = Release|Any CPU
+		{902431D1-A9C7-4E24-9E9E-89282FD25122}.Release|x64.Build.0 = Release|Any CPU
+		{902431D1-A9C7-4E24-9E9E-89282FD25122}.Release|x86.ActiveCfg = Release|Any CPU
+		{902431D1-A9C7-4E24-9E9E-89282FD25122}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

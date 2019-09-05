@@ -10,20 +10,17 @@ namespace ProfloPortalBackend.Model
     public class Card
     {
         [BsonId]
-        public int CId { get; set; }
+        public string CardId { get; set; }
 
-        [BsonElement("cardname")]
-        public string cardName { get; set; }
+        public string CardName { get; set; }
         [DataType(DataType.Date)]
         public DateTime CreationDate { get; set; }
         [DataType(DataType.Date)]
         public DateTime DueDate { get; set; }
-        public List<Member> CardMembers { get; set; }
+        public List<Member> Assignees { get; set; }
         public List<Label> Labels { get; set; }
-        public List<Attachement> Attachements { get; set; }
-        public List<Comments> Comments { get; set; }
-        public List<invitee> cardInvites { get; set; }
-
-
+        public List<Attachment> Attachements { get; set; }
+        public List<Comment> Comments { get; set; }
+    
     }
 }

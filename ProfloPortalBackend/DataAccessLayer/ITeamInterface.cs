@@ -1,30 +1,25 @@
 ﻿using ProfloPortalBackend.Model;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ProfloPortalBackend.DataAccessLayer
 {
-      public interface ITeamInterface
+    public interface ITeamInterface
     {
         List<Team> GetTeams();
-        bool UpdateTeam(int teamId, Team team);
-        Team GetTeamByID(int teamID);
+        bool UpdateTeam(string teamId, Team team);
+        Team GetTeamByID(string teamId);
         void CreateTeam(Team team);
-        bool RemoveTeam(int teamId);
-        void createMembers(int teamId,Member member);
-        bool UpdateMembers(int teamId, int mid, Member member);
-        bool RemoveMembers(int teamID, int mID);
-        void createInvite(int teamID, invitee invite);
-        bool UpdateInvite(int teamId, int inviteID, invitee invite);
-        ICollection<invitee> getTeamInvites(int teamID);
-        ICollection<Member> getTeamMembers(int teamID);
-        bool RemoveInvite(int teamId, int inviteID);
+        bool RemoveTeam(string teamId);
+        void CreateMembers(string teamId,Member member);
+        bool UpdateMembers(string teamId, int mid, Member member);
+        bool RemoveMembers(string teamId, int mID);
+        void CreateInvite(string teamId, Invitee invite);
+        bool UpdateInvite(string teamId, int inviteID, Invitee invite);
+        ICollection<Invitee> GetTeamInvites(string teamId);
+        ICollection<Member> GetTeamMembers(string teamId);
+        bool RemoveInvite(string teamId, int inviteID);
 
-
-        ICollection<teamBoard> getTeamBoards(int teamID);
-    //    ICollection<Member> getTeamMembers(int teamID);
-    //    ICollection<Invite> getTeamInvites(int teamID);
+        ICollection<TeamBoard> getTeamBoards(int teamID);
+    
     }
 }

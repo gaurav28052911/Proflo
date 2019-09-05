@@ -10,13 +10,16 @@ namespace ProfloPortalBackend.Model
     public class Member
     {
         [BsonId]
-        public int Mid { get; set; }
-        [BsonElement("membername")]
-        public string memberName { get; set; }
+        public string MemberId { get; set; }
+        
+        [BsonElement("memberName")]
+        public string MemberName { get; set; }
+        
         [BsonElement("status")]
-        public string status { get; set; }
+        public string Status { get; set; }
+        
         [DataType(DataType.Date)]
-        public DateTime assignedDate { get; set; }
+        public DateTime CreatedOn { get; set; }
         
     }
 }

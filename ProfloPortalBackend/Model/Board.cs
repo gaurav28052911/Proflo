@@ -9,16 +9,14 @@ namespace ProfloPortalBackend.Model
     public class Board
     {
         [BsonId]
-        public int BId { get; set; }
+        public string BId { get; set; }
         [BsonElement("boardname")]
         public string BoardName { get; set; }
         [BsonElement("description")]
         public string Description { get; set; }
         public List<Member> BoardMembers { get; set; }
-        public List<invitee> BoardInvites { get; set; }
-        public List<boardList> Lists { get; set; }
-
-       
+        public List<Invitee> BoardInvites { get; set; }
+        public List<BoardList> Lists { get; set; }
 
     }
 }

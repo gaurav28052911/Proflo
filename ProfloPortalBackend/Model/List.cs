@@ -7,14 +7,20 @@ using System.Threading.Tasks;
 
 namespace ProfloPortalBackend.Model
 {
-    public class Listt
+    public class List
     {
         [BsonId]
-        public int LId { get; set; }
-        [BsonElement("listname")]
-        public string ListName { get; set; }
+        public string LId { get; set; }
+        
+        [BsonElement("listTitle")]
+        public string ListTitle { get; set; }
+
+        public int ListPosition { get; set; }
+        
         [DataType(DataType.Date)]
         public DateTime CreationDate { get; set; }
-        public List<listCards> Cards { get; set; }
+        
+        [BsonElement("cards")]
+        public List<ListCard> Cards { get; set; }
     }
 }

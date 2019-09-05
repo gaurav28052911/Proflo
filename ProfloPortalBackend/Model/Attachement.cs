@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace ProfloPortalBackend.Model
 {
-    public class Attachement
+    public class Attachment
     {
         [BsonId]
-        public int AttachementId { get; set; }
+        public int AttachmentId { get; set; }
         [BsonElement("name")]
         public string Name { get; set; }
         [DataType(DataType.Date)]

@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProfloPortalBackend.Model
 {
-    public class teamBoard
+    public class TeamBoard
     {
-        Board board = new Board();
-       
-        
         [BsonId]
-        public int BId { get; set; }
-        [BsonElement("boardname")]
+        public string BoardId { get; set; }
+        [BsonElement("boardName")]
         public string BoardName { get; set; }
         [BsonElement("description")]
         public string Description { get; set; }

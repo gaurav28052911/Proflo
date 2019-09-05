@@ -9,9 +9,12 @@ namespace ProfloPortalBackend.Model
     public class Label
     {
         [BsonId]
-        public int labId { get; set; }
-        [BsonElement("labelname")]
-        public string labelName { get; set; }
-        public byte labelColor { get; set; }
+        public int LabelId { get; set; }
+        
+        [BsonElement("labelName")]
+        public string LabelName { get; set; }
+        
+        [BsonElement("labelColor")]
+        public string labelColor { get; set; }
     }
 }

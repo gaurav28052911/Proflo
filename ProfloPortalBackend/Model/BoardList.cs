@@ -7,11 +7,14 @@ using System.Threading.Tasks;
 
 namespace ProfloPortalBackend.Model
 {
-    public class boardList
+    public class BoardList
     {
-        public int LId { get; set; }
-        [BsonElement("listname")]
+        public string ListId { get; set; }
+        
         public string ListName { get; set; }
+        
+        public int ListPosition { get; set; }
+
         [DataType(DataType.Date)]
         public DateTime CreationDate { get; set; }
     }

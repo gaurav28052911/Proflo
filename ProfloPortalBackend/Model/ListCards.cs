@@ -7,13 +7,19 @@ using System.Threading.Tasks;
 
 namespace ProfloPortalBackend.Model
 {
-    public class listCards
+    public class ListCard
     {
-        public int CId { get; set; }
-        [BsonElement("cardname")]
-        public string cardName { get; set; }
+        [BsonId]
+        public string CId { get; set; }
+        
+        [BsonElement("cardTitle")]
+        public string CardTitle { get; set; }
+        
+        [BsonElement("createdDate")]
         [DataType(DataType.Date)]
         public DateTime CreationDate { get; set; }
+        
+        [BsonElement("dueDate")]
         [DataType(DataType.Date)]
         public DateTime DueDate { get; set; }
     }

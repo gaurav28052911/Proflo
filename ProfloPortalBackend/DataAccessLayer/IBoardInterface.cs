@@ -9,18 +9,18 @@ namespace ProfloPortalBackend.DataAccessLayer
      public interface IBoardInterface
     {
         List<Board> GetBoards();
-        bool UpdateBoard(int boardId, Board board);
-        Board GetBoardByID(int boardId);
+        bool UpdateBoard(string boardId, Board board);
+        Board GetBoardByID(string boardId);
         void CreateBoard(Board board);
-        bool RemoveBoard(int boardId);
-        void createMembers(int boardId, Member member);
-        bool UpdateMembers(int boardId,int Mid, Member member);
-        bool RemoveMembers(int boardId, int mID);
-        void createInvite(int boardId, invitee invite);
-        bool UpdateInvite(int boardId, int inviteID, invitee invite);
-        ICollection<invitee> getBoardInvites(int boardId);
-        ICollection<Member> getBoardMembers(int boardId);
-        bool RemoveInvite(int boardId, int inviteID);
-        ICollection<boardList> getBoardLists(int boardId);
+        bool RemoveBoard(string boardId);
+        void CreateMembers(string boardId, Member member);
+        bool UpdateMembers(string boardId, string memberId, Member member);
+        bool RemoveMembers(string boardId, string memberId);
+        void CreateInvite(string boardId, Invitee invite);
+        bool UpdateInvite(string boardId, string inviteId, Invitee invite);
+        ICollection<Invitee> GetBoardInvites(string boardId);
+        ICollection<Member> GetBoardMembers(string boardId);
+        bool RemoveInvite(string boardId, string inviteId);
+        ICollection<BoardList> GetBoardLists(string boardId);
     }
 }
